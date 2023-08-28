@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter - Convert your Currency</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">My Currency Converter</div>
+        <ul class="ul">
+            <li><a href="/home">Home</a></li>
+            <li><a href="/about">About us</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Choose a currency to convert</h1>
+        <form action="/" method="get">
+            <label for="quantity">Choose a quantity: </label>
+            <!-- <input type="number" name="quantity" min="1" max="10"> -->
+            <input type="number" name="quantity" >
+            <label for="currency">Choose a currency: </label>
+            <select name="currency">
+                <option value="INR">Indian Rupee</option>
+                <option value="USD">US Dollar</option>
+                <option value="EUR">Euro</option>
+                <option value="PKR">Pakistan Rupee</option>
+            </select>
+            <label for="targetCurrency">Choose a target currency: </label>
+            <select name="targetCurrency" id="targetCurrency">
+                <!-- Add target currency options here -->
+                <option value="USD">US Dollar</option>
+                <option value="EUR">Euro</option>
+                <option value="PKR">Pakistani rupee</option>
+                <option value="INR">Indian rupee</option>
+                <option value="AED"> UAE</option>
+                <option value="TRY">lira</option>
+                <option value="BDT">Taka </option>
+            </select>
+            <button class="btn" type="submit">Submit</button>
+        </form>
+        <div class="output">
+            <h2>Here is your converted values in different currencies</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Currency</th>
+                        <th>Code</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+        
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer>
+        Copyright &copy; all rights reserved
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
